@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  --font-sans: 'Inter', 'Pretendard', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 100px;
+  }
+
+  body {
+    @apply bg-deep-black text-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-neon-cyan to-intel-blue;
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl;
+  }
+}
