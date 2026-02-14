@@ -24,6 +24,14 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center space-x-8">
+                    {/* Badge */}
+                    <div className="hidden lg:inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-intel-green/30 bg-intel-green/10 text-intel-green backdrop-blur-sm cursor-default">
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-intel-green opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-intel-green"></span>
+                        </span>
+                        <span className="text-xs font-semibold tracking-wide">3월 30일 개강</span>
+                    </div>
                     <a href="#curriculum" className="text-gray-300 hover:text-neon-cyan transition-colors">Curriculum</a>
                     <a href="#projects" className="text-gray-300 hover:text-neon-cyan transition-colors">Projects</a>
                     <a href="#benefits" className="text-gray-300 hover:text-neon-cyan transition-colors">Benefits</a>

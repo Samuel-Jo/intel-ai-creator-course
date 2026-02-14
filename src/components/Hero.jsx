@@ -10,26 +10,14 @@ const Hero = () => {
     const [showQR, setShowQR] = React.useState(false);
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-28 pb-10 overflow-hidden bg-deep-black">
+        <section className="relative min-h-screen flex items-center justify-center pt-24 pb-10 overflow-hidden bg-deep-black">
             {/* Background Elements */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-intel-blue/20 rounded-full blur-[120px] opacity-30" />
             <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-neon-purple/10 rounded-full blur-[100px] opacity-20" />
 
             <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
 
-                {/* Floating Badge */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-intel-green/30 bg-intel-green/10 text-intel-green mb-4 backdrop-blur-sm cursor-default"
-                >
-                    <span className="relative flex h-3 w-3">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-intel-green opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-3 w-3 bg-intel-green"></span>
-                    </span>
-                    <span className="text-sm font-semibold tracking-wide">3월 30일 개강 • 수강생 모집 중</span>
-                </motion.div>
+
 
                 {/* VISUAL REFERENCE IMAGE REPLACEMENT */}
                 <motion.div
