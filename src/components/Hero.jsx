@@ -10,7 +10,7 @@ const Hero = () => {
     const [showQR, setShowQR] = React.useState(false);
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden bg-deep-black">
+        <section className="relative min-h-screen flex items-center justify-center py-[30px] overflow-hidden bg-deep-black">
             {/* Background Elements */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-intel-blue/20 rounded-full blur-[120px] opacity-30" />
             <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-neon-purple/10 rounded-full blur-[100px] opacity-20" />
