@@ -46,6 +46,10 @@ const Footer = () => {
                             <li>경기도 용인시 기흥구 영덕동 U-tower 1702호</li>
                             <li>SSMI교육원</li>
                         </ul>
+                        <div className="mt-6">
+                            <p className="text-xs text-slate-500 mb-2">모바일 간편 지원</p>
+                            <img src="/images/qr.png" alt="Education Application QR Code" className="w-24 h-24 rounded-lg border border-white/10" />
+                        </div>
                     </div>
                 </div>
 

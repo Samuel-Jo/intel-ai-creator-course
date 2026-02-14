@@ -29,7 +29,7 @@ const Navbar = () => {
                     <a href="#benefits" className="text-gray-300 hover:text-neon-cyan transition-colors">Benefits</a>
                     <a href="#faq" className="text-gray-300 hover:text-neon-cyan transition-colors">FAQ</a>
                     <button
-                        onClick={() => window.open('https://forms.gle/EQ7d5fWqK8j6jX5E8', '_blank')}
+                        onClick={() => window.open('https://forms.gle/SWK34KxYgNRNz9KJ9', '_blank')}
                         className="bg-neon-cyan text-black px-6 py-2 rounded-full font-bold hover:shadow-[0_0_20px_rgba(0,240,255,0.5)] transition-all transform hover:scale-105"
                     >
                         Apply Now
@@ -48,7 +48,10 @@ const Navbar = () => {
                     <a href="#curriculum" className="text-white text-lg">Curriculum</a>
                     <a href="#projects" className="text-white text-lg">Projects</a>
                     <a href="#benefits" className="text-white text-lg">Benefits</a>
-                    <button className="w-full bg-neon-cyan text-black py-3 rounded-xl font-bold">
+                    <button
+                        onClick={() => window.open('https://forms.gle/SWK34KxYgNRNz9KJ9', '_blank')}
+                        className="w-full bg-neon-cyan text-black py-3 rounded-xl font-bold"
+                    >
                         Apply Now
                     </button>
                 </div>

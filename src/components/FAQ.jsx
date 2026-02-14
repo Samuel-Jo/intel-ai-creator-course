@@ -29,7 +29,7 @@ const FAQ = () => {
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">지금이 가장 빠를 때입니다.</h2>
                         <p className="text-white/80 mb-8 text-lg">고민하는 사이 정원은 마감됩니다. 당신의 가능성을 Intel과 함께 증명하세요.</p>
                         <button
-                            onClick={() => window.open('https://forms.gle/EQ7d5fWqK8j6jX5E8', '_blank')}
+                            onClick={() => window.open('https://forms.gle/SWK34KxYgNRNz9KJ9', '_blank')}
                             className="bg-white text-intel-blue px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-transform transform hover:scale-105"
                         >
                             지금 바로 지원하기
@@ -39,15 +39,6 @@ const FAQ = () => {
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full translate-x-1/2 -translate-y-1/2 blur-2xl"></div>
                 </div>
             </div>
-
-            <footer className="mt-20 border-t border-white/10 py-10 text-center text-slate-500 text-sm">
-                <p>© 2026 Intel AI Creator Course. All rights reserved.</p>
-                <div className="flex justify-center gap-6 mt-4">
-                    <a href="#" className="hover:text-neon-cyan">Privacy Policy</a>
-                    <a href="#" className="hover:text-neon-cyan">Terms of Service</a>
-                    <a href="#" className="hover:text-neon-cyan">Contact Us</a>
-                </div>
-            </footer>
         </section>
     );
 };

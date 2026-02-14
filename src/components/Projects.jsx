@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 
 const projects = [
     {
-        title: "AI 수어 번역 키오스크",
-        engTitle: "Sign Language AI",
-        desc: "청각 장애인을 위한 실시간 수어 인식 주문 시스템",
-        tech: ["Computer Vision", "YOLOv8", "PyQT"],
+        title: "AI 마케팅 에이전트 (NLP)",
+        engTitle: "Marketing AI Agent",
+        desc: "상품 정보를 입력하면 홍보글을 자동 생성하는 NLP 에이전트",
+        tech: ["LangChain", "RAG", "Streamlit"],
         gradient: "from-blue-600 to-blue-900",
-        path: "/projects/sign-language"
+        path: "/projects/marketing-ai"
     },
     {
-        title: "스마트 팜 질병 진단",
+        title: "스마트 팜 질병 진단 (CV)",
         engTitle: "Smart Farm AI",
         desc: "드론 촬영 영상 기반 작물 질병 조기 탐지 AI",
         tech: ["CNN", "TensorFlow", "Edge AI"],
@@ -21,9 +21,9 @@ const projects = [
         path: "/projects/smart-farm"
     },
     {
-        title: "안전모 착용 감지 CCTV",
+        title: "안전모 착용 감지 CCTV (Capstone)",
         engTitle: "Safety AI",
-        desc: "건설 현장 안전 사고 예방을 위한 Edge AI 솔루션",
+        desc: "건설 현장 안전 사고 예방을 위한 Intel OpenVINO 솔루션",
         tech: ["Object Detection", "OpenVINO", "FastAPI"],
         gradient: "from-purple-600 to-purple-900",
         path: "/projects/safety-ai"
@@ -93,7 +93,7 @@ const Projects = () => {
                                     </div>
 
                                     {/* Arrow Icon */}
-                                    <div className="absolute top-6 right-6 p-2 bg-white/10 backdrop-blur-md rounded-full text-white opacity-0 group-hover:opacity-100 transform translate-y-[-10px] group-hover:translate-y-0 transition-all duration-300">
+                                    <div className="absolute top-6 right-6 p-2 bg-white/10 backdrop-blur-md rounded-full text-white group-hover:bg-intel-green group-hover:text-black transition-colors duration-300">
                                         <ArrowUpRight className="w-5 h-5" />
                                     </div>
                                 </div>

@@ -1,37 +1,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Gamepad2, Wallet, Award, Laptop, Rocket } from 'lucide-react';
+import { Gamepad2, Wallet, Award, Laptop, Rocket, Cpu } from 'lucide-react';
 
 const benefits = [
     {
+        icon: <Cpu className="w-10 h-10 text-intel-blue" />,
+        title: "EDGE 1. 최고 수준의 강사진",
+        desc: "Intel Korea 현직 기술 전문가 및 공인 인증 강사가 직접 지도하는 고품질 강의.",
+        highlight: "Intel Tech Specialists"
+    },
+    {
         icon: <Gamepad2 className="w-10 h-10 text-neon-purple" />,
-        title: "NCsoft 실무 프로젝트",
-        desc: "단순 견학이 아닙니다. NC AI와 함께 실제 기업 현업 과제를 수행하고 인턴십 기회까지 노려보세요.",
-        highlight: "게임/AI 분야 취업 치트키"
+        title: "EDGE 2. 4대 실무 프로젝트",
+        desc: "Computer Vision 도메인 프로젝트, NLP (자연어 처리) 도메인 프로젝트, App 서비스 개발 프로젝트, Final Capstone (Intel OpenVINO/Geti/Tiber), 포트폴리오 작성 및 발표",
+        highlight: "Practical Projects"
     },
     {
         icon: <Wallet className="w-10 h-10 text-neon-cyan" />,
-        title: "교육비 0원 + 훈련수당",
-        desc: "내일배움카드만 있으면 약 1,000만원 상당의 교육이 전액 무료. 매월 최대 316,000원의 훈련 장려금도 지원됩니다.",
-        highlight: "경제적 부담 ZERO"
-    },
-    {
-        icon: <Award className="w-10 h-10 text-intel-blue" />,
-        title: "Intel® 공식 인증서",
-        desc: "글로벌 기업 인텔이 인증하는 'AI Creator' 수료증을 발급받아 이력서에 강력한 한 줄을 추가하세요.",
-        highlight: "Global Certification"
+        title: "EDGE 3. 교육비 전액 무료",
+        desc: "수강료 0원 + 훈련 장려금 매월 최대 816,000원 지원 (국민내일배움카드 소지자).",
+        highlight: "Full Support"
     },
     {
         icon: <Laptop className="w-10 h-10 text-pink-500" />,
-        title: "고성능 노트북 지원",
-        desc: "AI 모델 학습에 필요한 고사양 노트북과 쾌적한 학습 공간을 교육 기간 동안 무상으로 대여해 드립니다.",
-        highlight: "장비 걱정 끝"
+        title: "EDGE 4. 학습 리소스 무한 제공",
+        desc: "고성능 노트북 무상 대여, 교육장 무제한 이용, 교재 및 스터디 그룹 운영 지원.",
+        highlight: "Unlimited Resources"
     },
     {
-        icon: <Rocket className="w-10 h-10 text-yellow-400" />,
-        title: "1인 창업(Solopreneur) 지원",
-        desc: "단순 취업을 넘어, 나만의 AI 서비스를 기획하고 개발하여 실제 수익 창출이 가능한 MVP까지 완성합니다.",
-        highlight: "CEO로 성장"
+        icon: <Award className="w-10 h-10 text-yellow-500" />,
+        title: "EDGE 5. 1:1 밀착 관리",
+        desc: "전문 멘토의 1:1 취업 컨설팅, 이력서/면접 코칭, 커리어 전략 수립 지원.",
+        highlight: "Career Care"
+    },
+    {
+        icon: <Rocket className="w-10 h-10 text-green-400" />,
+        title: "EDGE 6. Global Impact Festival",
+        desc: "우수 수료생 대상 Intel Global Impact Festival 참가 자격 부여 및 글로벌 무대 진출 기회.",
+        highlight: "Global Opportunity"
     }
 ];
 
@@ -53,11 +59,11 @@ const Benefits = () => {
                         왜 <span className="text-gradient">Intel AI Creator</span> 과정인가요?
                     </h2>
                     <p className="text-slate-400 max-w-2xl mx-auto">
-                        다른 과정과는 비교불가! 오직 여기서만 화끈하게 지원해 드립니다.
+                        압도적인 6가지 혜택 (EDGE)으로 여러분의 성장을 지원합니다.
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="bento-grid">
                     {benefits.map((item, index) => (
                         <motion.div
                             key={index}
@@ -65,23 +71,29 @@ const Benefits = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="glass-card p-8 group hover:-translate-y-2 transition-transform duration-300 border border-white/5 hover:border-neon-cyan/30"
+                            className={`glass-card p-8 group relative overflow-hidden flex flex-col justify-between
+                                ${index === 0 || index === 5 ? 'md:col-span-2' : 'md:col-span-1'}
+                            `}
                         >
-                            <div className="mb-6 p-4 bg-white/5 rounded-2xl w-fit group-hover:bg-white/10 transition-colors">
-                                {item.icon}
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-white/5 to-transparent rounded-bl-full opacity-50 group-hover:scale-150 transition-transform duration-500" />
+
+                            <div className="relative z-10">
+                                <div className="mb-6 p-4 bg-white/5 rounded-2xl w-fit group-hover:bg-neon-cyan/10 group-hover:text-neon-cyan transition-colors duration-300">
+                                    {item.icon}
+                                </div>
+
+                                <div className="mb-4">
+                                    <span className="text-xs font-bold text-slate-500 uppercase tracking-widest border border-white/10 px-2 py-1 rounded-md">{item.highlight}</span>
+                                </div>
+
+                                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-neon-cyan transition-colors">
+                                    {item.title}
+                                </h3>
+
+                                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                                    {item.desc}
+                                </p>
                             </div>
-
-                            <div className="mb-4">
-                                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">{item.highlight}</span>
-                            </div>
-
-                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-cyan transition-colors">
-                                {item.title}
-                            </h3>
-
-                            <p className="text-slate-400 text-sm leading-relaxed">
-                                {item.desc}
-                            </p>
                         </motion.div>
                     ))}
                 </div>
