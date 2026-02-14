@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ProjectMarketingAI from './pages/ProjectMarketingAI';
 import ProjectSmartFarm from './pages/ProjectSmartFarm';
@@ -10,7 +10,7 @@ import CountdownBar from './components/CountdownBar';
 
 function App() {
   return (
-    <Router basename="/intel-ai-creator-course">
+    <Router>
       <ScrollToTop />
       <CountdownBar />
       <Routes>
