@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import intelimg01 from '../assets/images/intelimg01.jpg';
 
 const DigitalReadinessSection = () => {
     return (
@@ -20,7 +21,7 @@ const DigitalReadinessSection = () => {
                     >
                         <div className="relative w-full aspect-[21/9] md:aspect-[3/1] lg:aspect-[3/1] overflow-hidden">
                             <img
-                                src="/images/intelimg01.jpg"
+                                src={intelimg01}
                                 alt="Intel Digital Readiness Programs"
                                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                             />

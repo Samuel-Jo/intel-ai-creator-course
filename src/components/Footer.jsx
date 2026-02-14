@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Twitter, Instagram, Linkedin, Github } from 'lucide-react';
+import qrImage from '../assets/images/qr.png';
 
 const Footer = () => {
     return (
@@ -48,7 +49,7 @@ const Footer = () => {
                         </ul>
                         <div className="mt-6">
                             <p className="text-xs text-slate-500 mb-2">모바일 간편 지원</p>
-                            <img src="/images/qr.png" alt="Education Application QR Code" className="w-24 h-24 rounded-lg border border-white/10" />
+                            <img src={qrImage} alt="Education Application QR Code" className="w-24 h-24 rounded-lg border border-white/10" />
                         </div>
                     </div>
                 </div>

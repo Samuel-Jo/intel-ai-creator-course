@@ -2,6 +2,8 @@ import React from 'react';
 import { ArrowRight, Cpu, Code, Rocket } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AiAppCreatorSection from './AiAppCreatorSection';
+import qrImage from '../assets/images/qr.png';
+import intelimg04 from '../assets/images/intelimg04.jpg';
 
 
 const Hero = () => {
@@ -115,7 +117,7 @@ const Hero = () => {
                                     <h3 className="text-xl font-bold text-black mb-2">모바일로 간편 지원</h3>
                                     <p className="text-slate-500 text-sm mb-6">스마트폰 카메라로 QR 코드를 스캔하세요.</p>
                                     <div className="bg-slate-100 p-4 rounded-xl inline-block mb-4">
-                                        <img src="/images/qr.png" alt="Application QR Code" className="w-48 h-48" />
+                                        <img src={qrImage} alt="Application QR Code" className="w-48 h-48" />
                                     </div>
                                     <button
                                         onClick={() => window.open('https://forms.gle/SWK34KxYgNRNz9KJ9', '_blank')}
@@ -142,7 +144,7 @@ const Hero = () => {
                         {/* Image Composition */}
                         <div className="w-full relative rounded-2xl overflow-hidden border border-white/10 group mb-6">
                             <img
-                                src="/images/intelimg04.jpg"
+                                src={intelimg04}
                                 alt="Intel AI Training"
                                 className="w-full h-auto object-cover object-center group-hover:scale-105 transition-all duration-700"
                             />
