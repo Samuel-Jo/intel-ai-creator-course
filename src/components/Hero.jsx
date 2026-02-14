@@ -10,7 +10,7 @@ const Hero = () => {
     const [showQR, setShowQR] = React.useState(false);
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center py-[30px] overflow-hidden bg-deep-black">
+        <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden bg-deep-black">
             {/* Background Elements */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-intel-blue/20 rounded-full blur-[120px] opacity-30" />
             <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-neon-purple/10 rounded-full blur-[100px] opacity-20" />
@@ -22,7 +22,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-intel-green/30 bg-intel-green/10 text-intel-green mb-2 backdrop-blur-sm cursor-default"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-intel-green/30 bg-intel-green/10 text-intel-green mb-8 backdrop-blur-sm cursor-default"
                 >
                     <span className="relative flex h-3 w-3">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-intel-green opacity-75"></span>
@@ -36,7 +36,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.1 }}
-                    className="mb-4 max-w-7xl mx-auto"
+                    className="mb-16 max-w-7xl mx-auto"
                 >
                     <AiAppCreatorSection />
                 </motion.div>
@@ -48,7 +48,7 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="text-6xl md:text-8xl font-bold leading-tight mb-2 tracking-tighter text-white"
+                            className="text-6xl md:text-8xl font-bold leading-tight mb-6 tracking-tighter text-white"
                         >
                             Future<br />
                             Workforce
@@ -60,9 +60,9 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
-                            className="mb-3"
+                            className="mb-10"
                         >
-                            <p className="text-2xl text-slate-300 font-light mb-1">
+                            <p className="text-2xl text-slate-300 font-light mb-4">
                                 <span className="font-semibold text-white">intel.</span> digital readiness
                             </p>
                             <p className="text-lg text-slate-400 leading-relaxed max-w-xl">
