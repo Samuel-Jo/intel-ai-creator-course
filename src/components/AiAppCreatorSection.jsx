@@ -9,7 +9,7 @@ const AiAppCreatorSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#0068B5] w-full min-h-[500px] rounded-3xl relative overflow-hidden flex items-center justify-center shadow-2xl py-12 md:py-16"
+            className="bg-[#0068B5] w-full min-h-[500px] rounded-3xl relative overflow-hidden flex items-center justify-center shadow-2xl py-10"
         >
             {/* Background Pattern */}
             <div className="absolute inset-0 bg-[linear-gradient(45deg,rgba(255,255,255,0.05)_25%,transparent_25%,transparent_50%,rgba(255,255,255,0.05)_50%,rgba(255,255,255,0.05)_75%,transparent_75%,transparent)] bg-[length:60px_60px] opacity-30" />
