@@ -47,7 +47,7 @@ const CountdownBar = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1, duration: 0.5 }}
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl"
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[72%] max-w-3xl"
         >
             <div className="bg-[#2A2A2A]/90 backdrop-blur-lg border border-white/10 p-3 md:p-4 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8">
 
