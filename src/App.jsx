@@ -10,7 +10,7 @@ import CountdownBar from './components/CountdownBar';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/intel-ai-creator-course">
       <ScrollToTop />
       <CountdownBar />
       <Routes>
