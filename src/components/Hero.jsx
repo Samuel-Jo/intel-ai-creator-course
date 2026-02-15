@@ -73,7 +73,9 @@ const Hero = () => {
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </button>
                             <a
-                                href="#curriculum"
+                                href="https://k-digital-16432217829.us-west1.run.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="px-8 py-4 border border-white/10 text-slate-300 font-semibold text-lg rounded-xl hover:bg-white/5 hover:text-white transition-all hover:border-intel-green/50 w-full sm:w-auto text-center"
                             >
                                 커리큘럼 보기
