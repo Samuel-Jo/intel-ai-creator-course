@@ -22,9 +22,10 @@ const subjects = [
         title: 'AI 핵심 기술 & 딥러닝',
         desc: 'AI Awareness부터 Capstone까지, 현업 수준의 AI 기술 습득',
         details: [
-            'AI Awareness & AI Foundation',
+            'AI Awareness',
+            'AI Foundation',
             'AI Experience (실습 중심)',
-            'Computer Vision & NLP 기초',
+            'Computer Vision, NLP, Stat 기초',
             'AI Capstone 프로젝트 기획',
             'Intel® OpenVINO™ & Geti 활용'
         ]
