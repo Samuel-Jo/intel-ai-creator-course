@@ -37,6 +37,7 @@ const subjects = [
         details: [
             'Computer Vision 도메인 프로젝트',
             'NLP (자연어 처리) 도메인 프로젝트',
+            'Statistics (통계) 도메인 프로젝트',
             'App 서비스 개발 프로젝트',
             'Final Capstone (Intel OpenVINO/Geti/Tiber)',
             '포트폴리오 작성 및 발표'

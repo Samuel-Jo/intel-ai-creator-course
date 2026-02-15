@@ -12,7 +12,7 @@ const benefits = [
     {
         icon: <Gamepad2 className="w-10 h-10 text-neon-purple" />,
         title: "EDGE 2. 4대 실무 프로젝트",
-        desc: "Computer Vision 도메인 프로젝트, NLP (자연어 처리) 도메인 프로젝트, App 서비스 개발 프로젝트, Final Capstone (Intel OpenVINO/Geti/Tiber), 포트폴리오 작성 및 발표",
+        desc: "Computer Vision, NLP(자연어 처리), Statistics(통계) 도메인 프로젝트 및 App 서비스 개발, Final Capstone, 포트폴리오 작성까지.",
         highlight: "Practical Projects"
     },
     {
