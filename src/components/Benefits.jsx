@@ -18,7 +18,7 @@ const benefits = [
     {
         icon: <Wallet className="w-10 h-10 text-neon-cyan" />,
         title: "EDGE 3. 교육비 전액 무료",
-        desc: "수강료 0원 + 훈련 장려금 매월 최대 816,000원 지원 (국민내일배움카드 소지자).",
+        desc: "수강료 0원 + 훈련 장려금 매월 최대 316,000원 지원 (국민내일배움카드 소지자).",
         highlight: "Full Support"
     },
     {

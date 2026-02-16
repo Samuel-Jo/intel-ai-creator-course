@@ -29,7 +29,7 @@ const AiAppCreatorSection = () => {
 
                 {/* 3. Sub Title: "AI 융합 솔루션 전문가" (in 28px) */}
                 <h3 className="text-[28px] font-light opacity-90 mb-8 border-b border-white/30 inline-block pb-2">
-                    AI 융합 솔루션 전문가
+                    바이브코딩 앱개발 전문가
                 </h3>
 
                 {/* 4. Line 1: Brighter Cyan, 14px */}
