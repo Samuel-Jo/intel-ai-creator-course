@@ -77,65 +77,64 @@ const Hero = () => {
                                 커리큘럼 보기
                             </a>
                             <div className="p-2 bg-white rounded-xl shadow-lg">
-                                <img src={qrImage} alt="QR Code" className="w-16 h-16 object-contain" />
+                                <img src={qrImage} alt="QR Code" className="w-24 h-24 object-contain" />
                             </div>
                         </motion.div>
+
+
                     </div>
 
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                        className="lg:flex-[1.8] relative w-full flex flex-col gap-4"
+                    >
+                        {/* Decorative Elements */}
+                        <div className="absolute top-0 right-0 w-full h-full bg-intel-green/5 rounded-full blur-[100px] -z-10"></div>
 
+                        {/* Image Composition */}
+                        <div className="w-full relative rounded-2xl overflow-hidden border border-white/10 group mb-6">
+                            <img
+                                src={intelimg04}
+                                alt="Intel AI Training"
+                                className="w-full h-auto object-cover object-center group-hover:scale-105 transition-all duration-700"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+
+
+                    </motion.div>
                 </div>
 
+                {/* Bottom Curve Decoration */}
+                <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-intel-green/10 rounded-full blur-[80px]"></div>
+
+
+                {/* Stats / Badges */}
                 <motion.div
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    className="lg:flex-[1.8] relative w-full flex flex-col gap-4"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1 }}
+                    className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
                 >
-                    {/* Decorative Elements */}
-                    <div className="absolute top-0 right-0 w-full h-full bg-intel-green/5 rounded-full blur-[100px] -z-10"></div>
-
-                    {/* Image Composition */}
-                    <div className="w-full relative rounded-2xl overflow-hidden border border-white/10 group mb-6">
-                        <img
-                            src={intelimg04}
-                            alt="Intel AI Training"
-                            className="w-full h-auto object-cover object-center group-hover:scale-105 transition-all duration-700"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    </div>
-
-
+                    {[
+                        { icon: <Cpu className="w-6 h-6 text-intel-blue" />, text: "Intel® AI 기술 인증" },
+                        { icon: <Code className="w-6 h-6 text-neon-purple" />, text: "NCsoft 실무 프로젝트" },
+                        { icon: <Rocket className="w-6 h-6 text-neon-cyan" />, text: "교육비 0원 전액무료" },
+                    ].map((item, idx) => (
+                        <div key={idx} className="bg-white/95 backdrop-blur-xl rounded-2xl p-6 flex flex-col md:flex-row items-center justify-center gap-4 relative overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_16px_48px_rgba(255,255,255,0.2)] hover:-translate-y-2 transition-all duration-300 group">
+                            <div className="bg-slate-50 p-4 rounded-full group-hover:bg-white group-hover:shadow-lg transition-all duration-300 ring-1 ring-slate-100">
+                                {React.cloneElement(item.icon, { className: `w-8 h-8 ${idx === 0 ? 'text-intel-blue' : idx === 1 ? 'text-neon-purple' : 'text-neon-cyan'}` })}
+                            </div>
+                            <div className="text-center md:text-left">
+                                <span className="font-extrabold text-slate-800 text-lg md:text-xl tracking-tight whitespace-nowrap group-hover:text-black transition-colors">{item.text}</span>
+                            </div>
+                        </div>
+                    ))}
                 </motion.div>
+
             </div>
-
-            {/* Bottom Curve Decoration */}
-            <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-intel-green/10 rounded-full blur-[80px]"></div>
-
-
-            {/* Stats / Badges */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1 }}
-                className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
-            >
-                {[
-                    { icon: <Cpu className="w-6 h-6 text-intel-blue" />, text: "Intel® AI 기술 인증" },
-                    { icon: <Code className="w-6 h-6 text-neon-purple" />, text: "NCsoft 실무 프로젝트" },
-                    { icon: <Rocket className="w-6 h-6 text-neon-cyan" />, text: "교육비 0원 전액무료" },
-                ].map((item, idx) => (
-                    <div key={idx} className="bg-white/95 backdrop-blur-xl rounded-2xl p-6 flex flex-col md:flex-row items-center justify-center gap-4 relative overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_16px_48px_rgba(255,255,255,0.2)] hover:-translate-y-2 transition-all duration-300 group">
-                        <div className="bg-slate-50 p-4 rounded-full group-hover:bg-white group-hover:shadow-lg transition-all duration-300 ring-1 ring-slate-100">
-                            {React.cloneElement(item.icon, { className: `w-8 h-8 ${idx === 0 ? 'text-intel-blue' : idx === 1 ? 'text-neon-purple' : 'text-neon-cyan'}` })}
-                        </div>
-                        <div className="text-center md:text-left">
-                            <span className="font-extrabold text-slate-800 text-lg md:text-xl tracking-tight whitespace-nowrap group-hover:text-black transition-colors">{item.text}</span>
-                        </div>
-                    </div>
-                ))}
-            </motion.div>
-
-        </div>
         </section >
     );
 };
